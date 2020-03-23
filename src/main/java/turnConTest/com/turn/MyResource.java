@@ -528,6 +528,7 @@ public class MyResource {
 			if (!"0".equals(seting.getSecurity()))
 				return "{\"error\": \"notCorrPass\"}";
 		}
+		over="1";
 		if ("0".equals(over)) {
 			LocalDateTime checkOut = Instant.now().atZone(ZoneId.of("US/Central")).toLocalDateTime();
 			LocalDateTime checkIn = employee1.getLstTime();
